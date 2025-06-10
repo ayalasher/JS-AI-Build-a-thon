@@ -1,0 +1,152 @@
+body {
+  background: #fafafc;
+  font-family: "Kalam", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  background: #fff;
+  border: 3px dashed #bbb;
+  box-shadow: 0 2px 16px #0001;
+  padding: 24px 40px 32px 40px;
+}
+
+header h1 {
+  font-size: 2.7rem;
+  padding-bottom: 8px;
+  margin: 0 0 12px 0;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  border: 3px solid #bbb;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  background: #f6f6f9;
+}
+
+section {
+  margin-bottom: 36px;
+  border: 2px solid #bbb;
+  border-radius: 7px;
+  padding: 12px 18px 18px 18px;
+  background: #fdfdfc;
+}
+
+h2 {
+  font-size: 1.65rem;
+  margin: 0 0 3px 0;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.12rem;
+  margin-top: 2px;
+  margin-bottom: 16px;
+  font-style: italic;
+  color: #656565;
+}
+
+.product-grid {
+  display: flex;
+  gap: 44px;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0 0 0 4px;
+}
+
+.product {
+  width: 180px;
+  text-align: center;
+  background: #fffdf7;
+  border: 2px dotted #bbb;
+  border-radius: 6px;
+  box-shadow: 1px 2px 0 #ebe8e3;
+  padding: 15px 7px 8px 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 78px;
+  height: 65px;
+  margin: 0 auto 8px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: grayscale(0.7) contrast(0.7);
+}
+
+/* --- Simple SVG Sketch-style Icons --- */
+/* Replace these with actual handdrawn SVGs or images if you want */
+
+.tent1 {
+  background-image: url('data:image/svg+xml;utf8,<svg width="78" height="65" xmlns="http://www.w3.org/2000/svg"><path d="M5 60 L39 9 L74 60 Z" fill="none" stroke="%23666" stroke-width="2.2"/><path d="M27 38 L39 60 L50 35" fill="none" stroke="%23666" stroke-width="1.5"/></svg>');
+}
+.tent2 {
+  background-image: url('data:image/svg+xml;utf8,<svg width="78" height="65" xmlns="http://www.w3.org/2000/svg"><path d="M10 60 L39 15 L68 60 Z" fill="none" stroke="%23666" stroke-width="2.2"/><ellipse cx="39" cy="50" rx="10" ry="13" fill="none" stroke="%23666" stroke-width="1.5"/></svg>');
+}
+.tent3 {
+  background-image: url('data:image/svg+xml;utf8,<svg width="78" height="65" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="35" width="55" height="22" rx="5" fill="none" stroke="%23666" stroke-width="2"/> <path d="M10 50 L39 15 L65 47" fill="none" stroke="%23666" stroke-width="1.5"/></svg>');
+}
+.backpack1 {
+  background-image: url('data:image/svg+xml;utf8,<svg width="64" height="65" xmlns="http://www.w3.org/2000/svg"><ellipse cx="32" cy="36" rx="16" ry="23" fill="none" stroke="%23666" stroke-width="2"/><rect x="20" y="36" width="24" height="25" rx="8" fill="none" stroke="%23666" stroke-width="1.6"/><path d="M24 12 Q32 3 40 12" fill="none" stroke="%23666" stroke-width="1.2"/></svg>');
+}
+.backpack2 {
+  background-image: url('data:image/svg+xml;utf8,<svg width="64" height="65" xmlns="http://www.w3.org/2000/svg"><ellipse cx="32" cy="30" rx="12" ry="18" fill="none" stroke="%23666" stroke-width="2"/><rect x="22" y="30" width="20" height="28" rx="7" fill="none" stroke="%23666" stroke-width="1.6"/><line x1="32" y1="38" x2="32" y2="55" stroke="%23666" stroke-width="1.2"/></svg>');
+}
+.backpack3 {
+  background-image: url('data:image/svg+xml;utf8,<svg width="64" height="65" xmlns="http://www.w3.org/2000/svg"><ellipse cx="32" cy="45" rx="18" ry="11" fill="none" stroke="%23666" stroke-width="2"/><rect x="24" y="24" width="16" height="20" rx="5" fill="none" stroke="%23666" stroke-width="1.6"/><ellipse cx="32" cy="20" rx="7" ry="5" fill="none" stroke="%23666" stroke-width="1"/></svg>');
+}
+.clothing1 {
+  background-image: url('data:image/svg+xml;utf8,<svg width="78" height="65" xmlns="http://www.w3.org/2000/svg"><path d="M20 50 L26 18 L39 23 L52 18 L58 50" fill="none" stroke="%23666" stroke-width="2"/><rect x="28" y="29" width="22" height="28" rx="6" fill="none" stroke="%23666" stroke-width="1.5"/></svg>');
+}
+.clothing2 {
+  background-image: url('data:image/svg+xml;utf8,<svg width="78" height="65" xmlns="http://www.w3.org/2000/svg"><rect x="31" y="19" width="16" height="36" rx="4" fill="none" stroke="%23666" stroke-width="2"/><line x1="31" y1="29" x2="18" y2="54" stroke="%23666" stroke-width="1.5"/><line x1="47" y1="29" x2="60" y2="54" stroke="%23666" stroke-width="1.5"/></svg>');
+}
+.clothing3 {
+  background-image: url('data:image/svg+xml;utf8,<svg width="78" height="65" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="40" width="48" height="15" rx="5" fill="none" stroke="%23666" stroke-width="2"/><rect x="20" y="25" width="14" height="15" rx="5" fill="none" stroke="%23666" stroke-width="2"/><rect x="44" y="25" width="14" height="15" rx="5" fill="none" stroke="%23666" stroke-width="2"/></svg>');
+}
+
+.name {
+  margin: 8px 0 2px 0;
+  font-size: 1.08rem;
+  min-height: 38px;
+}
+
+.price {
+  font-size: 1.18rem;
+  font-weight: bold;
+  color: #577;
+  margin: 6px 0 0 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    padding: 12px 2vw 24px 2vw;
+  }
+  .product-grid {
+    gap: 16px;
+  }
+  .product {
+    width: 100px;
+    font-size: 90%;
+  }
+}
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .product-grid {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .product {
+    width: 85vw;
+  }
+}

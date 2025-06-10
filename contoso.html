@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contoso Outdoor Company</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(135deg, #f0f4f8 0%, #e8f2ff 100%);
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        min-height: 100vh;
+      }
+      header {
+        text-align: center;
+        border: 3px solid #4a90e2;
+        margin: 32px 32px 24px 32px;
+        padding: 10px 0 0 0;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+      }
+      .main-title {
+        font-family: "Architects Daughter", cursive;
+        font-size: 2.8rem;
+        margin: 6px 0;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        color: #2c5aa0;
+        text-shadow: 0 1px 2px rgba(44, 90, 160, 0.1);
+      }
+      section {
+        background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+        border: 3px solid #5ba3f5;
+        border-radius: 12px;
+        margin: 0 32px 28px 32px;
+        box-shadow: 0 3px 10px rgba(91, 163, 245, 0.12);
+        padding: 18px 18px 10px 18px;
+      }
+      section:not(:last-child) {
+        margin-bottom: 24px;
+      }
+      h2 {
+        font-family: "Architects Daughter", cursive;
+        font-size: 1.5rem;
+        color: #1e4a72;
+        margin: 0;
+        margin-bottom: 3px;
+        letter-spacing: 0.5px;
+      }
+      .section-desc {
+        font-family: "Architects Daughter", cursive;
+        font-size: 1.03rem;
+        color: #3d5a80;
+        margin-bottom: 16px;
+      }
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-bottom: 8px;
+      }
+      .product-box {
+        background: linear-gradient(135deg, #fafcff 0%, #f0f6ff 100%);
+        border: 2px solid #6bb6ff;
+        border-radius: 9px;
+        text-align: center;
+        padding: 12px 8px 8px 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 175px;
+        justify-content: space-between;
+        transition: all 0.3s ease;
+      }
+      .product-box:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(107, 182, 255, 0.2);
+        border-color: #4a90e2;
+      }
+      .product-img {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 6px;
+        border-radius: 6px;
+        border: 1.5px dashed #7cc7ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #f8fcff 0%, #eef7ff 100%);
+        margin-top: 6px;
+        font-size: 2rem;
+        color: #5ba3f5;
+      }
+      .product-title {
+        font-family: "Architects Daughter", cursive;
+        font-size: 1.05rem;
+        margin-bottom: 2px;
+        margin-top: 1px;
+        color: #2c5aa0;
+        font-weight: normal;
+        line-height: 1.15;
+      }
+      .product-price {
+        letter-spacing: 0.2px;
+        color: #1e4a72;
+        font-size: 1.02rem;
+        font-weight: bold;
+        font-family: "Architects Daughter", cursive;
+        margin-bottom: 1px;
+        background: linear-gradient(135deg, #4a90e2, #2c5aa0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* Responsive for mobile */
+      @media (max-width: 900px) {
+        .products-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 600px) {
+        header,
+        section {
+          margin: 12px 4px;
+          padding: 10px 6px 5px 6px;
+        }
+        .products-grid {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="main-title">Contoso Outdoor Company</div>
+    </header>
+
+    <section>
+      <h2>Tents</h2>
+      <div class="section-desc">
+        Unfold adventure with Contoso's range of tents.
+      </div>
+      <div class="products-grid">
+        <div class="product-box">
+          <div class="product-img">&#9968;</div>
+          <div class="product-title">TrailMaster X4 Tent</div>
+          <div class="product-price">$200</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#9978;</div>
+          <div class="product-title">Alpine Explorer Tent</div>
+          <div class="product-price">$300</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#127966;</div>
+          <div class="product-title">SkyView 2-Person Tent</div>
+          <div class="product-price">$380</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Backpacks</h2>
+      <div class="section-desc">
+        Our backpack category is equipped to accompany you in every twist and
+        turn.
+      </div>
+      <div class="products-grid">
+        <div class="product-box">
+          <div class="product-img">&#128092;</div>
+          <div class="product-title">Adventurer Pro Backpack</div>
+          <div class="product-price">$60</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#128725;</div>
+          <div class="product-title">Summit Climber Backpack</div>
+          <div class="product-price">$70</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#128722;</div>
+          <div class="product-title">TrailLite DayPack</div>
+          <div class="product-price">$40</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Hiking Clothing</h2>
+      <div class="section-desc">
+        Step into nature with Contoso Outdoors hiking clothes.
+      </div>
+      <div class="products-grid">
+        <div class="product-box">
+          <div class="product-img">&#129492;</div>
+          <div class="product-title">Summit Breeze Jacket</div>
+          <div class="product-price">$60</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#128085;</div>
+          <div class="product-title">Trail Blaze Pants</div>
+          <div class="product-price">$80</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#128095;</div>
+          <div class="product-title">TREKSTAR Boots</div>
+          <div class="product-price">$120</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Navigation Equipment</h2>
+      <div class="section-desc">
+        Find your way with Contoso's precision navigation gear.
+      </div>
+      <div class="products-grid">
+        <div class="product-box">
+          <div class="product-img">&#129517;</div>
+          <div class="product-title">TrailFinder GPS</div>
+          <div class="product-price">$150</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#129520;</div>
+          <div class="product-title">Adventure Compass</div>
+          <div class="product-price">$35</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#128506;</div>
+          <div class="product-title">Topographic Map Set</div>
+          <div class="product-price">$25</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cooking & Camping</h2>
+      <div class="section-desc">
+        Fuel your adventures with our camping kitchen essentials.
+      </div>
+      <div class="products-grid">
+        <div class="product-box">
+          <div class="product-img">&#127859;</div>
+          <div class="product-title">Portable Camp Stove</div>
+          <div class="product-price">$85</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#129372;</div>
+          <div class="product-title">Titanium Cookware Set</div>
+          <div class="product-price">$120</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#128293;</div>
+          <div class="product-title">Fire Starter Kit</div>
+          <div class="product-price">$15</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Safety & First Aid</h2>
+      <div class="section-desc">
+        Stay safe on the trails with our emergency preparedness gear.
+      </div>
+      <div class="products-grid">
+        <div class="product-box">
+          <div class="product-img">&#127973;</div>
+          <div class="product-title">Emergency First Aid Kit</div>
+          <div class="product-price">$45</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#128294;</div>
+          <div class="product-title">LED Headlamp</div>
+          <div class="product-price">$30</div>
+        </div>
+        <div class="product-box">
+          <div class="product-img">&#128226;</div>
+          <div class="product-title">Emergency Whistle</div>
+          <div class="product-price">$12</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

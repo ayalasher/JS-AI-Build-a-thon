@@ -23,21 +23,25 @@ export async function main() {
       messages: [
         // role definitions of the AI and user
         // Each role has some content for it.
-        { role: "system", content: "You are a helpful assistant that can analyze images and write code." },
+        {
+          role: "system",
+          content:
+            "You are a helpful assistant that can analyze images and write code.",
+        },
         {
           role: "user",
           content: [
             {
               type: "text",
-              text: "Write HTML and CSS for a webpage based on the following handdrawn sketch"
+              text: "Write HTML and CSS for a webpage based on the following handdrawn sketch",
             },
             {
               type: "image_url",
               image_url: {
-                url: `data:image/jpeg;base64,${base64Image}`
-              }
-            }
-          ]
+                url: `data:image/jpeg;base64,${base64Image}`,
+              },
+            },
+          ],
         },
       ],
       // Model parameters.
